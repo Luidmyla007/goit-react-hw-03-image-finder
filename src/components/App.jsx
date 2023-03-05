@@ -9,7 +9,7 @@ import  Searchbar from 'components/Searchbar/Searchbar';
 import  ImageGallery from 'components/ImageGallery/ImageGallery';
 import  Button  from 'components/Button/Button';
 import  Modal  from 'components/Modal/Modal';
-import  Loader  from 'components/Loader/Loader';
+import  Loader  from 'components/Loader/loader';
 
 export class App extends Component {
   state = {
