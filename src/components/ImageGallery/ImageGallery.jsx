@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import ImageGalleryItem from 'components/ImageGalleryItem/ImageGaleryItem';
+import ImageGalleryItem from 'components/ImageGalleryItem/ImageGalleryItem';
 
 
 function ImageGallery({ images, onClick }) {
