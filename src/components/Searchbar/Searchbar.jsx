@@ -2,6 +2,12 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 import { AiOutlineSearch } from 'react-icons/ai';
+import {
+  SearchHeader,
+  SearchForm,
+  SearchFormInput,
+  SearchButton,
+} from './SearchBar.styled';
 
 
 class Searchbar extends Component {
@@ -30,15 +36,15 @@ class Searchbar extends Component {
 
   render() {
     return (
-      <header >
-        <form onSubmit={this.handleSubmit}>
-          <button type="submit" >
+        <SearchHeader>
+        <SearchForm onSubmit={this.handleSubmit}>
+          <SearchButton type="submit" >
             <span >
-              <AiOutlineSearch width="25" height="25"/>              
+              <AiOutlineSearch width="12" height="12"/>              
             </span>
-          </button>
+          </SearchButton>
 
-          <input            
+          < SearchFormInput            
             type="text"
             name="query"
             value={this.state.query}
@@ -48,8 +54,8 @@ class Searchbar extends Component {
             placeholder="Search images and photos"  
             size={40}
           />
-        </form>
-      </header>
+        </SearchForm>
+      </SearchHeader>
     );
   }
 };
