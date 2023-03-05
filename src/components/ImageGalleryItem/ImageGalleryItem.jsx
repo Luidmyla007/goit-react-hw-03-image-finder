@@ -8,11 +8,7 @@ import { GalleryItem, GalleryItemImg } from './ImageGalleryItem.styled';
   tags,
   onClick,
 }) => (
-  <GalleryItem
-    onClick={() => {
-      onClick(largeImageURL);
-    }}
-  >
+  <GalleryItem  onClick={() => {onClick(largeImageURL)}}>
     <GalleryItemImg src={webformatURL} alt={tags} />
   </GalleryItem>
 );

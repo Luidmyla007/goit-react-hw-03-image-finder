@@ -88,13 +88,14 @@ export class App extends Component {
     }));
   };
 
-  toggleModal = largeImageURL => {
+ toggleModal = largeImageURL => {
     this.setState(({ showModal }) => ({
       showModal: !showModal,
     }));
     this.setState({ largeImageURL: largeImageURL });
   };
 
+  
   render() {
     const { images, error, isLoading, showModal, largeImageURL, tags, total } = this.state;
     const loadImages = images.length !== 0;
