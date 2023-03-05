@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import ImageGalleryItem from 'components/ImageGalleryItem/ImageGalleryItem';
+import { Gallery } from './ImageGallery.styled';
 
 
 function ImageGallery({ images, onClick }) {
   return (
-    <ul>
+    <Gallery>
       {images.map(({ id, webformatURL, largeImageURL, tags }) => (
         <ImageGalleryItem
           key={id}
@@ -14,7 +15,7 @@ function ImageGallery({ images, onClick }) {
           onClick={onClick}
         />
       ))}
-    </ul>
+    </Gallery>
   );
 }
 
