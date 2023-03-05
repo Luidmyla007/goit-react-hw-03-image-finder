@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import ImageGalleryItem from 'components/ImageGalleryItem/ImageGalleryItem';
+import { ImageGalleryItem } from 'components/ImageGalleryItem/ImageGalleryItem';
 import { Gallery } from './ImageGallery.styled';
 
 
-export function ImageGallery({ images, onClick }) {
+export const ImageGallery = ({ images, onClick }) => {
   return (
     <Gallery>
       {images.map(({ id, webformatURL, largeImageURL, tags }) => (
@@ -17,7 +17,7 @@ export function ImageGallery({ images, onClick }) {
       ))}
     </Gallery>
   );
-}
+};
 
 ImageGallery.prototype = {
   images: PropTypes.arrayOf(

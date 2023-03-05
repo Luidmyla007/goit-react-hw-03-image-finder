@@ -71,7 +71,7 @@ export class App extends Component {
       .finally(() => this.setState({ isLoading: false }));
   };
 
-  handleSearch = query => {
+  onSearch = query => {
     if (query === this.state.query) return;
     this.setState({
       images: [],
@@ -81,7 +81,7 @@ export class App extends Component {
     });
   };
 
-  onLoadMore = () => {
+  loadMore = () => {
     this.setState(({ page }) => ({
       page: page + 1,
       isLoading: true,
@@ -105,11 +105,11 @@ export class App extends Component {
     return (
       <Container>
         <GlobalStyles />
-        <Searchbar onSubmit={this.handleSearch}/>
+        <Searchbar onSubmit={this.onSearch}/>
         {error && toast.error(error.message)}
         {isLoading && <Loader/>}
         {loadImages && <ImageGallery images={images} onClick={this.toggleModal}/>}
-        {loadMoreBtn && <Button onClick={this.onLoadMore}>Load more</Button>}
+        {loadMoreBtn && <Button onClick={this.loadMore}>Load more</Button>}
         {showModal && <Modal onClose={this.toggleModal}><img src={largeImageURL} alt={tags}/></Modal>}
         <ToastContainer theme="dark" position="top-right" autoClose={2000}/>      
       </Container>

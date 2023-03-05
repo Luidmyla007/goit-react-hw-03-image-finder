@@ -39,5 +39,5 @@ export class Modal extends Component {
       </OverlayStyled>,
       modalRoot
     );
-  }  
-}
+  };  
+};
