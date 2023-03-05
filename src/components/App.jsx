@@ -1,10 +1,12 @@
 
 
 
-export const App = () => {
-  return (
-    <div>
-      React homework template
-    </div>
-  );
-};
+
+
+// export const App = () => {
+//   return (
+//     <div>
+//       React homework template
+//     </div>
+//   );
+// };
