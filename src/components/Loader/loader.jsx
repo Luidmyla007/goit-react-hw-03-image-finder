@@ -1,7 +1,7 @@
 import { Circles } from 'react-loader-spinner';
 import { StyledLoader } from './Loader.styled';
 
-const Loader = () => {
+export const Loader = () => {
   return (
     <StyledLoader>
       <Circles
@@ -17,4 +17,3 @@ const Loader = () => {
   );
 };
 
-export default Loader;

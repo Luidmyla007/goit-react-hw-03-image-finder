@@ -3,7 +3,7 @@ import ImageGalleryItem from 'components/ImageGalleryItem/ImageGalleryItem';
 import { Gallery } from './ImageGallery.styled';
 
 
-function ImageGallery({ images, onClick }) {
+export function ImageGallery({ images, onClick }) {
   return (
     <Gallery>
       {images.map(({ id, webformatURL, largeImageURL, tags }) => (
@@ -30,4 +30,3 @@ ImageGallery.prototype = {
   ), onClick: PropTypes.func.isRequired,
 };
 
-export default ImageGallery;

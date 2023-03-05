@@ -5,11 +5,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import {fetchData}  from '../Fetch/Fetch';
-import  Searchbar from 'components/Searchbar/Searchbar';
-import  ImageGallery from 'components/ImageGallery/ImageGallery';
-import  Button  from 'components/Button/Button';
-import  Modal  from 'components/Modal/Modal';
-import  Loader  from 'components/Loader/loader';
+import { Searchbar } from 'components/Searchbar/Searchbar';
+import { ImageGallery } from 'components/ImageGallery/ImageGallery';
+import { Button }  from 'components/Button/Button';
+import { Modal }  from 'components/Modal/Modal';
+import { Loader }  from 'components/Loader/loader';
 
 export class App extends Component {
   state = {
@@ -119,11 +119,3 @@ export class App extends Component {
 
 
 
-
-// export const App = () => {
-//   return (
-//     <div>
-//       React homework template
-//     </div>
-//   );
-// };
