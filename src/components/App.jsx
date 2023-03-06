@@ -3,7 +3,7 @@ import { GlobalStyles } from "./GlobalStyles";
 import { Container } from './App.styled';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+// 
 import {fetchData}  from '../Fetch/Fetch';
 import { Searchbar } from 'components/Searchbar/Searchbar';
 import { ImageGallery } from 'components/ImageGallery/ImageGallery';
